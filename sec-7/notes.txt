@@ -1,6 +1,18 @@
-Critical Rendering Path
+****** Critical Rendering Path *******
+
   * Resource: https://developers.google.com/web/fundamentals/performance/critical-rendering-path/
   * Resource: https://classroom.udacity.com/courses/ud884/lessons/1464158642/concepts/15290985540923
     - Free Udacity course on web performance
 
 The critical rendering path is a topic I will need to investigate much more thoroughly at a later date. For now, it is important to understand that when you request a web page, the browser makes a request to the server for different resources (HTML, CSS, Javascript), and the size of these resources matters to the load time of the page. There is also a process that the browsers goes through from recieving the HTML to actually painting the pixels on the page that is in-depth and interesting, but not essential to understand at this time. Basically, the browser parses the HTML document for tags, turns these tags into nodes, then constructs the DOM tree from these nodes. It does something simmilar to create the CSSOM, and then with these two constructed it can create the layout and paint the actual pixels on the screen.
+
+****** Flexbox *******
+
+A hard problem when designing websites is getting content, especially images, to appear on the page where you want them to be. Flexbox is a great tool for accomplishing this goal.
+
+* Resource: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+Flexbox was created as a more efficient way to lay out, align, and distribute space among items in a container when their size is unkown and/or dynamic. It is most appropriate for the components of an application and small scale portions of the layout, while the Grid is intended for larger scale layouts. It seems to work really good for image galleries, nav menus, and re-organizing elements on the page independent of source order as screen sizes adjust.
+
+* Resource: https://flexboxfroggy.com/
+* Resource: https://darekkay.com/dev/flexbox-cheatsheet.html

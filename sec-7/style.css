@@ -1,0 +1,22 @@
+.container {
+  /* Makes the container a flexbox, all of the images will be displayed vertically. */
+  display: flex;
+  /* By default, flex-items will all be on one line, so they could take up more than the width of the viewport. If you want them to wrap around at the edge of the element, you need the flex-wrap property. */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h1  {
+  font-family: fantasy;
+  font-size: 3em;
+  border-bottom: 2px solid pink;
+  border-right: 2px solid pink;
+  width: 400px;
+  text-align: center;
+}
+
+img {
+  width: 250px;
+  height: 150px;
+  margin: 10px;
+}
