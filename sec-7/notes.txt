@@ -1,0 +1,6 @@
+Critical Rendering Path
+  * Resource: https://developers.google.com/web/fundamentals/performance/critical-rendering-path/
+  * Resource: https://classroom.udacity.com/courses/ud884/lessons/1464158642/concepts/15290985540923
+    - Free Udacity course on web performance
+
+The critical rendering path is a topic I will need to investigate much more thoroughly at a later date. For now, it is important to understand that when you request a web page, the browser makes a request to the server for different resources (HTML, CSS, Javascript), and the size of these resources matters to the load time of the page. There is also a process that the browsers goes through from recieving the HTML to actually painting the pixels on the page that is in-depth and interesting, but not essential to understand at this time. Basically, the browser parses the HTML document for tags, turns these tags into nodes, then constructs the DOM tree from these nodes. It does something simmilar to create the CSSOM, and then with these two constructed it can create the layout and paint the actual pixels on the screen.
