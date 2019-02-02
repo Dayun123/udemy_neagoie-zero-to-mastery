@@ -1,0 +1,13 @@
+.box-model {
+  border: 5px solid red;
+  /* allows the element to be an inline element but with block element properties like margin and padding. */
+  display: inline-block;
+  /* creates some space inside the box, 5px top/bottom and 20px left/right */
+  padding: 5px 20px;
+  /* creates some space around the box. */
+  margin: 20px;
+  /* the width and height that the CONTENT of the box takes up. */
+  width: 75px;
+  height: 50px;
+  text-align: center;
+}

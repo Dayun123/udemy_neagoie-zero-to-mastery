@@ -1,0 +1,92 @@
+/*
+selector {
+  property: value;
+}
+*/
+
+* {
+  text-align: right;
+}
+
+body {
+  /*background-image: url(pug.jpeg);*/
+  background-size: cover;
+}
+
+/* element element selector, styles every <p> element inside an h2 element*/
+h2 p {
+  color: #AA4139;
+  text-align: center;
+  border: 5px solid rgb(255, 176, 170, 0.5);
+  cursor: alias;
+}
+
+h1:hover {
+  text-align: center;
+  color: yellow;
+  border: 5px solid rgb(100, 220, 23);
+}
+
+/* select any <p> directly after an img or h2 */
+h2 + p, img + p {
+  color: blue;
+}
+
+/* Applies to direct children of the first selector */
+h2 > p {
+  color: yellow;
+  text-align: left;
+}
+
+p {
+  /* Only use !important if you want to override everything! */
+  /*color: red !important;*/
+  text-decoration: underline;
+  text-transform: uppercase;
+  line-height: 25px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 15px;
+  /* Google fonts */
+  font-family: 'Poiret One', cursive;
+}
+
+img {
+  /* Only use float for images, and make sure to clear any elements you don't want to float up next to the floated element. */
+  float: left;
+}
+
+footer {
+  /* Since we floated the image on the about page, we need to clear the footer of the float. */
+  clear: left;
+  text-align: center;
+}
+
+p {
+  color: green;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+.webtext:last-child {
+  border: 5px dashed green;
+}
+
+.webtext:first-child {
+  border-bottom: 5px solid yellow;
+}
+
+.active {
+  color: red;
+}
+
+#div1 {
+  background: rgba(0, 0, 255, 0.2);
+}
+
+#div2 {
+  background: rgba(255, 0, 0, 0.2);
+}
