@@ -1,3 +1,9 @@
+
+/* Browsers put a margin around the body, if you want things to be able to bump up against the edge of the screen you will need to remove this margin. */
+body {
+  margin: 0;
+}
+
 .container {
   /* Makes the container a flexbox, all of the images will be displayed vertically. */
   display: flex;
@@ -13,10 +19,16 @@ h1  {
   border-right: 2px solid pink;
   width: 400px;
   text-align: center;
+  box-shadow: 4px 4px 5px #888;
 }
 
 img {
   width: 250px;
   height: 150px;
   margin: 10px;
+  transition: all 1s;
+}
+
+img:hover {
+  transform: scale(1.1);
 }

@@ -16,3 +16,11 @@ Flexbox was created as a more efficient way to lay out, align, and distribute sp
 
 * Resource: https://flexboxfroggy.com/
 * Resource: https://darekkay.com/dev/flexbox-cheatsheet.html
+
+*********** CSS 3 ****************
+
+CSS is constantly evovling, and the latest iteration, CSS3, has some really cool tools for making websites more dynamic. Transition and transform are two such properties, and the accompanying html and css files in this section show how we use them to make images grow larger on hover. These effects can be used to create short little effects, if you want looped actions you can use the animation property.
+
+Anytime you use a new CSS property, you should ensure that it works across all browsers. Some newer properties may require a prefix, such as -ms- or -moz-, since they are still in the experimental stage of implementation. Websites like caniuse.com are great for figuring out which browsers support newer features.
+
+* Resource: https://thoughtbot.com/blog/transitions-and-transforms
